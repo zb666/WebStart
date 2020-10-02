@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS属性</title>
+
+    <style>
+        div{
+            border: 1px solid red;
+            width: 100px;
+        }
+        .div1{
+            width: 100px;
+            height: 100px;
+            /**
+            外边距
+             */
+            /*margin: 50px;*/
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        .div3{
+            float: left;
+        }
+        .div4{
+            float: left;
+        }
+        .div5{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div2">
+    <div class="div1"></div>
+</div>
+<!--3和4悬浮在左边 5单独悬浮在右边-->
+<div class="div3">aaaaa</div>
+<div class="div4">bbbbb</div>
+<div class="div5">右侧悬浮</div>
+
+</body>
+</html>
