@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img id="light" src="img/off.gif" onclick ="funA();">
+<img id="light2" src="img/off.gif">
+
+<script>
+    function funA() {
+        alert("被点击了");
+        alert("又被点击了");
+    }
+    function fun2() {
+        alert("指明有点位 ")
+    }
+
+    //获取light2对象，然后绑定click事件
+    var light2 = document.getElementById("light2")
+    light2.onclick = fun2;
+
+</script>
+
+</body>
+</html>
