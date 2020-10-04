@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location对象</title>
+</head>
+<body>
+
+<input type="button" id="btn" value="刷新">
+<input type="button" id="goItCast" value="去官网">
+<input type="button" id="goHistory" value="历史记录对象">
+
+<!--Location 中有reload,href等属性-->
+
+<script>
+    let btn = document.getElementById("btn");
+    btn.onclick = function () {
+        //刷新页面
+        // location.href
+        // location.host
+        // location.protocol
+        // location.reload()
+        location.reload();
+    }
+    //Location地址栏对象
+    //历史记录对象
+    //显示器屏幕对象
+    //浏览器对象Navigator
+    //Window窗口对象
+
+
+    //Navigator浏览器对象
+    //Screen显示器屏幕对象
+    //History历史记录记录对象
+
+    //获取href
+    var href = location.href;
+    //点击按钮去官网
+    var goItCast = document.getElementById("goItCast");
+    goItCast.onclick = function () {
+        //去访问官网
+        location.href = "https://www.baidu.com";
+    }
+    var goHistory = document.getElementById("goHistory")
+    goHistory.onclick = function () {
+            history.back();
+            // history.go();
+            // history.forward();
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+</head>
+<body>
+
+<img id="img" src="img/banner_1.jpg" width="100%">
+
+<script>
+    /*定时器*/
+    var numer = 1;
+    if(numer>3){
+        numer =1;
+    }
+    function fun() {
+        numer++;
+        var img =  document.getElementById("img");
+        img.src = "img/banner_"+numer+".jpg";
+    }
+    setInterval(fun,3000);
+
+</script>
+
+</body>
+</html>
